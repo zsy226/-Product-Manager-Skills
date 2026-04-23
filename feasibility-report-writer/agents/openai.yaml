@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feasibility Writer"
+  short_description: "Write formal IT feasibility reports."
+  default_prompt: "Analyze the project materials, run the bundled parser when source files are provided, read the fact base, and default to staged append-only drafting for any full feasibility report that is not obviously short. For long reports, initialize the workflow workspace with scripts/manage_long_report.py and treat the generated report.md as the cumulative source of truth. Round 0 must produce only the baseline package (classification, outline family, chapter/system/module writing directions, staged drafting plan). Later rounds must read the accumulated draft, identify the append anchor, generate only the next bounded section, and append it under the correct heading instead of regenerating the whole report."
